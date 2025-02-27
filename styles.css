@@ -1,24 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: url('assets/bg-space.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 #game-container {
-    width: 480px;
-    height: 720px;
-    border: 4px solid white;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-    background: black;
     position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    display: block;
+    background: transparent;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    font-family: Arial, sans-serif;
 }
